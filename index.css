@@ -9,7 +9,7 @@
 .fixed{
   position: fixed;
   width: 100%;
-  background-color: black;
+  background-color: white;
   padding: 10px;
   height: 50px;
   top: 0;
@@ -18,12 +18,15 @@
 }
 
 .fixed a{
-  font-size: 15pt !important;
+  font-size: 15pt;
   top: -30px;
+  color: black !important;
 }
 
- .fixed .container-fluid .navbar-header .navbar-brand {
-   top: -50px;
+ .fixed a.navbar-brand {
+   top: 0px;
+   padding: 0px;
+   bottom: 30px;
  }
 
 .navbar .container-fluid{
@@ -53,7 +56,7 @@ text-align: center;
 }
 
 .navbar li a{
-  color: white !important;
+  color: white ;
   font-family: 'Lobster', cursive;
   font-size: 15pt;
 
@@ -70,12 +73,39 @@ text-align: center;
     background-color: black;
 }
 
-#how-it-works{
+#how-it-works, #about{
   position: relative;
-  background-color: white;
   width: 100%;
-  height: 100px;
-  top: 100vh;
+  height: 100vh;
+  top: 80vh;
+  background-image:  url("about.jpg");
+  background-repeat: round;
+  background-attachment: fixed;
+}
+
+
+#about{
+  background-image:  url("videoframe.jpg");
+}
+
+#how-it-works div, #about div{
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-family: 'Bahiana', cursive;
+  padding-left: 100px;
+  font-size: 15pt;
+  padding-top: 150px;
+  color: white;
+}
+
+#about div{
+  float:right;
+}
+
+#how-it-works div h1{
+
+
 }
 
 .intro-bg__video {
