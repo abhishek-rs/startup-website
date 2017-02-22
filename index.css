@@ -9,35 +9,48 @@
 .fixed{
   position: fixed;
   width: 100%;
-  background-color: white;
+  background-color: black;
   padding: 10px;
   height: 50px;
   top: 0;
   padding-top: 0;
+  box-shadow: 0px 0px 5px  #d6d6c2;
   z-index: 100;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.fixed a{
-  font-size: 15pt;
-  top: -30px;
-  color: black !important;
-}
-
- .fixed a.navbar-brand {
-   top: 0px;
+.fixedfont{
+   font-size: 15pt;
+   color: black;
    padding: 0px;
    bottom: 30px;
+ }
+
+ .fixedfont:hover{
+   color: white;
+   background-color: black;
  }
 
 .navbar .container-fluid{
   padding: 30px;
 }
 
-.navbar-brand{
-  color: white !important;
+.fixedlogo{
+  margin-top: -35px;
+}
+
+#brand li a{
+  color: white;
   font-family: 'Lobster', cursive;
-  font-weight: bold;
-  font-size: 30pt;
+  font-size: 20pt;
+}
+
+#brand li a:hover{
+  background-color: white;
+  color: black;
 }
 
 #intro-text{
@@ -55,11 +68,8 @@ text-align: center;
   font-size: 60pt;
 }
 
-.navbar li a{
-  color: white ;
-  font-family: 'Lobster', cursive;
-  font-size: 15pt;
-
+.navbar-logo{
+  height: 30px;
 }
 
 .intro-video {
@@ -67,45 +77,83 @@ text-align: center;
     top: 0;
     right: 0;
     bottom: 0;
+
     left: 0;
     overflow: hidden;
     z-index: -100;
     background-color: black;
 }
 
-#how-it-works, #about{
+#how-it-works, #who-are-we{
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   top: 80vh;
   background-image:  url("about.jpg");
   background-repeat: round;
   background-attachment: fixed;
-}
-
-
-#about{
-  background-image:  url("videoframe.jpg");
-}
-
-#how-it-works div, #about div{
-  width: 50%;
-  float: left;
   text-align: center;
-  font-family: 'Bahiana', cursive;
-  padding-left: 100px;
+}
+
+
+#how-it-works{
+
+  background-image:  url("more.jpg");
+}
+
+#how-it-works2{
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  top: 80vh;
+  text-align: center;
+  background-color: orange;
+  
+}
+
+#footer{
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  top: 80vh;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+#how-it-works2 .image img{
+  padding-top: 50px;
+  width: 80%;
+
+}
+
+
+#how-it-works .text, #who-are-we .text{
+  width: 40%;
+  float: right;
+  text-align: center;
+  font-family: 'Sansita', sans-serif;
+  padding-right: 100px;
   font-size: 15pt;
-  padding-top: 150px;
-  color: white;
+  padding-top: 50px;
+  color: black;
 }
 
-#about div{
-  float:right;
+#how-it-works .text{
+  float:left;
+  padding-left: 100px;
 }
 
-#how-it-works div h1{
+.filler{
+width: 100%;
 
-
+position: relative;
+background-color: white;
+padding: 40px;
+padding-top: 40px;
+text-align: center;
+font-family: 'Sansita', sans-serif;
+font-size: 40pt;
 }
 
 .intro-bg__video {
