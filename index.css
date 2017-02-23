@@ -9,11 +9,11 @@
 .fixed{
   position: fixed;
   width: 100%;
-  background-color: black;
+
   padding: 10px;
-  height: 50px;
+  height: 70px;
   top: 0;
-  padding-top: 0;
+  padding-top: 10px;
   box-shadow: 0px 0px 5px  #d6d6c2;
   z-index: 100;
   -webkit-transition: all 0.5s ease;
@@ -84,32 +84,73 @@ text-align: center;
     background-color: black;
 }
 
-#how-it-works, #who-are-we{
+#where, #who-are-we{
   position: relative;
   width: 100%;
   height: 110vh;
   top: 80vh;
-  background-image:  url("about.jpg");
+  background-image:  url("./images/about.jpg");
   background-repeat: round;
   background-attachment: fixed;
   text-align: center;
 }
 
 
-#how-it-works{
+#where{
 
-  background-image:  url("more.jpg");
+  background-image:  url("./images/more.jpg");
 }
 
-#how-it-works2{
+#how-it-works, #team{
   position: relative;
   width: 100%;
   height: 120vh;
   top: 80vh;
   text-align: center;
-  background-color: orange;
-  
+  background-color: #E27A3F;
+
 }
+
+#who-are-we .filler{
+  background-color: #45B29D;
+}
+
+#where .filler{
+  background-color: #EFC94C;
+}
+
+#how-it-works .filler{
+  background-color: #E27A3F;
+}
+
+#team .filler{
+    background-color: #DF5A49;
+}
+
+#team{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  height: auto;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #DF5A49;
+}
+
+.person{
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+}
+
+.person-image img{
+  border-radius: 50%;
+  width:100%;
+
+}
+
 
 #footer{
   position: relative;
@@ -121,14 +162,14 @@ text-align: center;
   background-color: black;
 }
 
-#how-it-works2 .image img{
+#how-it-works .image img{
   padding-top: 50px;
   width: 80%;
 
 }
 
 
-#how-it-works .text, #who-are-we .text{
+#where .text, #who-are-we .text{
   width: 40%;
   float: right;
   text-align: center;
@@ -139,14 +180,14 @@ text-align: center;
   color: black;
 }
 
-#how-it-works .text{
+#where .text{
   float:left;
   padding-left: 100px;
 }
 
 .filler{
 width: 100%;
-
+color: white;
 position: relative;
 background-color: white;
 padding: 40px;
