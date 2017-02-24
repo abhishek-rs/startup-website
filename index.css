@@ -56,12 +56,17 @@
 #intro-text{
 position:relative;
 font-family: 'Bahiana', cursive;
-top:25vh;
+top:10vh;
 color: white;
 right:0;
 bottom:0;
 left:0;
 text-align: center;
+}
+
+
+#intro-text img {
+  width: 30%;
 }
 
 #intro-text h1{
