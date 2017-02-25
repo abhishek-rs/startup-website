@@ -204,7 +204,6 @@ text-align: center;
 #how-it-works .image img{
   padding-top: 50px;
   width: 80%;
-
 }
 
 
@@ -263,7 +262,10 @@ font-size: 40pt;
 }
 
 @media only screen and (max-width: 768px) {
-
+  #how-it-works .image img{
+    padding-top: 10px;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 425px) {
