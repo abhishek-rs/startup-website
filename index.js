@@ -7,9 +7,10 @@ $(document).ready(function() {
     var $who_are_we = $("#who-are-we .filler");
     var $how_it_works = $("#where .filler");
     var $how_it_works2 = $("#how-it-works .filler");
-    var $team = $("#team .filler")
+    var $team = $("#team .filler");
+    var $postcard = $("#postcard .filler");
     var $fixed = $(".fixed");
-    var top = 200;
+    var top = 50;
     var flag = false;
 
     console.log(top);
@@ -35,10 +36,13 @@ $(document).ready(function() {
                 else if (y>=$how_it_works.offset().top && y < $how_it_works2.offset().top) {
                   $nav_bar.css('background-color', $how_it_works.css('background-color'));
                 }
-                else if (y>=$how_it_works2.offset().top && y < $team.offset().top){
+                else if (y>=$how_it_works2.offset().top && y < $postcard.offset().top){
                   $nav_bar.css('background-color', $how_it_works2.css('background-color'));
                 }
-                else if (y>=$team.offset().top ){
+                else if (y>=$postcard.offset().top && y < $team.offset().top){
+                  $nav_bar.css('background-color', $postcard.css('background-color'));
+                }
+                else if (y>=$team.offset().top){
                   $nav_bar.css('background-color', $team.css('background-color'));
                 }
 
