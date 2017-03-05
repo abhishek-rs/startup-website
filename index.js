@@ -12,75 +12,85 @@ $(document).ready(function() {
     var $fixed = $(".fixed");
     var top = 50;
     var flag = false;
+    var $image = $("#how-it-works .image img");
+  //  console.log(top);
 
-    console.log(top);
+  if($(window).width() <= 425) {
+
+        $image.attr("src", "./images/customerjourney.png");
+      }
+
+
+  $("#who").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#who-are-we").offset().top
+      }, 1500);
+  });
+
+  $("#how").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#how-it-works").offset().top
+      }, 1500);
+  });
+
+  $("#tee").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#team").offset().top
+      }, 1500);
+  });
+
+  $("#foot").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#footer").offset().top
+      }, 1500);
+  });
+
+  $(".navbar-logo").click(function() {
+      $('html, body').animate({
+          scrollTop: 0
+      }, 1500);
+  });
+
+
+
+  $("#who").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#who-are-we").offset().top
+      }, 1500);
+  });
 
     function fixnav() {
         $(window).scroll(function(event) {
-            // what the y position of the scroll is
             var y = $(this).scrollTop();
-                // whether that's below the form
             if (y >= top) {
-                // if so, ad the fixed class
                 $nav_bar.addClass('fixed');
                 $nav_bar_brand.addClass('fixedfont');
-
                 $nav_bar_logo.addClass('fixedlogo');
-
-            //    $nav_bar_logo.attr('src','logoblack.png');
-                //  $(".button").css("color":"white");
-                if( y >= $who_are_we.offset().top && y < $how_it_works.offset().top){
-                  $nav_bar.css('background-color', $who_are_we.css('background-color'));
-                  //console.log(y, $nav_bar.css('background-color'));
-                }
-                else if (y>=$how_it_works.offset().top && y < $how_it_works2.offset().top) {
-                  $nav_bar.css('background-color', $how_it_works.css('background-color'));
-                }
-                else if (y>=$how_it_works2.offset().top && y < $postcard.offset().top){
-                  $nav_bar.css('background-color', $how_it_works2.css('background-color'));
-                }
-                else if (y>=$postcard.offset().top && y < $team.offset().top){
-                  $nav_bar.css('background-color', $postcard.css('background-color'));
-                }
-                else if (y>=$team.offset().top){
-                  $nav_bar.css('background-color', $team.css('background-color'));
-                }
-
-                else {
-                  $nav_bar.css('background-color', '#334D5C');
+                if (y >= $who_are_we.offset().top && y < $how_it_works.offset().top) {
+                    $nav_bar.css('background-color', $who_are_we.css('background-color'));
+                    //console.log(y, $nav_bar.css('background-color'));
+                } else if (y >= $how_it_works.offset().top && y < $how_it_works2.offset().top) {
+                    $nav_bar.css('background-color', $how_it_works.css('background-color'));
+                } else if (y >= $how_it_works2.offset().top && y < $postcard.offset().top) {
+                    $nav_bar.css('background-color', $how_it_works2.css('background-color'));
+                } else if (y >= $postcard.offset().top && y < $team.offset().top) {
+                    $nav_bar.css('background-color', $postcard.css('background-color'));
+                } else if (y >= $team.offset().top) {
+                    $nav_bar.css('background-color', $team.css('background-color'));
+                } else {
+                    $nav_bar.css('background-color', '#334D5C');
                 }
 
             }
 
             else {
-               // otherwise remove it
-               $nav_bar.css('background-color', "");
-               $nav_bar.removeClass('fixed');
-               $nav_bar_brand.removeClass('fixedfont');
-
-               $nav_bar_logo.removeClass('fixedlogo');
-           //    $nav_bar_logo.attr('src','logowhite.png');
-
-               //   $(".button").css("color":"#81BEF7");
-           }
-
-
-
-                //  $(".button").css("color":"white");
-
-
-
-        });
+                $nav_bar.css('background-color', "");
+                $nav_bar.removeClass('fixed');
+                $nav_bar_brand.removeClass('fixedfont');
+                $nav_bar_logo.removeClass('fixedlogo');
+            }
+    });
         return false;
     }
     fixnav();
-
-/*
-    $('.backsies').click(function() {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 600);
-    });
-
-*/
 });

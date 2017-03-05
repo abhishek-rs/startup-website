@@ -169,9 +169,15 @@
     width: 80%;
 }
 
-.person-text {
+.person-text h3{
     font-family: 'Bahiana', cursive;
-    font-size: 40pt;
+    font-size: 30pt;
+    color: white;
+}
+
+.person-text p{
+    font-family: 'Lobster', cursive;
+    font-size: 15pt;
     color: white;
 }
 
@@ -333,12 +339,9 @@
         padding-bottom: 20px;
         height: 160vh;
         width: 100%;
-        background-image: url("./images/customerjourney.png");
-        background-size: cover;
+
     }
-    #how-it-works .image img {
-        display: none;
-    }
+  
     #postcard {
         background-image: url("./images/postcard-phone.jpg");
         height: 120vh;
@@ -363,18 +366,25 @@
     }
     .person {
         position: relative;
-        width: 30%;
+        width: 45%;
         padding: 10px;
     }
     .person-image img {
         border-radius: 50%;
         width: 90%;
     }
-    .person-text {
+    .person-text h3{
         font-family: 'Bahiana', cursive;
         font-size: 15pt;
         color: white;
     }
+
+    .person-text p{
+        font-family: 'Lobster', cursive;
+        font-size: 12pt;
+        color: white;
+    }
+
     #footer {
         font-size: 15pt;
         top: 60vh;
