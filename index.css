@@ -184,7 +184,7 @@
 #footer {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 140vh;
     top: 80vh;
     padding: 40px;
     padding-top: 10px;
@@ -193,6 +193,15 @@
     font-family: 'Lobster', cursive;
     font-size: 20pt;
     color: white;
+}
+
+#youtube{
+  width:100%;
+}
+
+#youtube iframe{
+  width: 85%;
+  height: 80vh;
 }
 
 #footer a {
@@ -254,12 +263,192 @@
     opacity: 0.65;
 }
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+
+}
 
 @media only screen and (max-width: 768px) {
-    #how-it-works .image img {
-        padding-top: 10px;
+
+
+    body {
+        width: 100vw;
+    }
+
+    .navbar {
+        height: 50px;
+        padding: 10px;
+    }
+
+    .navbar-header {
         width: 100%;
+        height: 100%;
+    }
+    .fixed {
+        padding: 5px;
+        padding-left: 15px;
+        height: 30px;
+        box-shadow: 0px 0px 2px #d6d6c2;
+    }
+    .navbar-toggle {
+        padding: 5px;
+        position: relative;
+        right: 0;
+        left: 0;
+        top: 8px;
+        bottom: 0;
+        margin: auto;
+    }
+    .fixedfont {
+        font-size: 15pt;
+        bottom: 0px;
+    }
+    #bs-example-navbar-collapse-1 {
+        float: right;
+        background-color: #334D5C;
+        top: 0px;
+    }
+
+    .navbar .container-fluid {
+        padding: 0px;
+    }
+    .fixedlogo {
+        margin-top: -5px;
+    }
+    #brand li a {
+        font-size: 15pt;
+    }
+    #intro-text {
+        top: 20vh;
+    }
+    #intro-text img {
+        width: 30%;
+    }
+    .navbar-logo {
+        height: 30px;
+    }
+    .filler {
+        padding: 20px;
+        padding-top: 10px;
+        font-size: 20pt;
+    }
+    #where, #who-are-we {
+        height: 120vh;
+        top: 60vh;
+        text-align: center;
+    }
+    #where {
+        height: 140vh;
+    }
+    #how-it-works, #team, #postcard {
+        top: 60vh;
+    }
+    #how-it-works .image {
+        padding-bottom: 20px;
+        height: 160vh;
+        width: 100%;
+
+    }
+
+    #postcard {
+        background-image: url("./images/postcard-phone.jpg");
+        height: 120vh;
+    }
+    #postcard .filler {
+        background-color: #DF5A49;
+    }
+    #who-are-we .filler {
+        background-color: #45B29D;
+    }
+    #where .filler {
+        background-color: #EFC94C;
+    }
+    #how-it-works .filler {
+        background-color: #E27A3F;
+    }
+    #team .filler {
+        background-color: #6D4C41;
+    }
+    #team {
+        width: 100%;
+    }
+    .person {
+        position: relative;
+        width: 45%;
+        padding: 10px;
+    }
+    .person-image img {
+        border-radius: 50%;
+        width: 90%;
+    }
+    .person-text h3{
+        font-family: 'Bahiana', cursive;
+        font-size: 15pt;
+        color: white;
+    }
+
+    .person-text p{
+        font-family: 'Lobster', cursive;
+        font-size: 12pt;
+        color: white;
+    }
+
+    #footer {
+        font-size: 15pt;
+        top: 60vh;
+        height: 150vh;
+    }
+
+    #youtube{
+      width:100%;
+    }
+
+    #youtube iframe{
+      width: 95%;
+      height: 80vh;
+    }
+
+    #where .text, #who-are-we .text, #postcard .text {
+        width: 90%;
+        float: none;
+        text-align: center;
+        padding: 15px;
+        font-size: 12pt;
+        padding-top: 20px;
+        position: relative;
+        margin: 20px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: black;
+        background-color: rgba(245, 238, 238, 0.7);
+        border-radius: 5px;
+        margin: 10px;
+    }
+    #postcard .text {
+        float: none;
+        padding-right: 10px;
+        position: relative;
+        padding: 10px;
+        background-color: rgba(245, 238, 238, 0.7);
+        border-radius: 5px;
+        right: 0px;
+        top: 10px;
+        box-shadow: 0px 0px 0px;
+    }
+    #where .text {
+        float: none;
+        margin-top: 5%;
+        padding-left: 15px;
+    }
+    .intro-bg__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.65;
     }
 }
 
@@ -337,11 +526,11 @@
     }
     #how-it-works .image {
         padding-bottom: 20px;
-        height: 160vh;
+        height: 120vh;
         width: 100%;
 
     }
-  
+
     #postcard {
         background-image: url("./images/postcard-phone.jpg");
         height: 120vh;
@@ -388,8 +577,14 @@
     #footer {
         font-size: 15pt;
         top: 60vh;
-        height: 80vh;
+        height: 120vh;
     }
+
+    #youtube iframe{
+      width: 95%;
+      height: 40vh;
+    }
+
     #where .text, #who-are-we .text, #postcard .text {
         width: 90%;
         float: none;
